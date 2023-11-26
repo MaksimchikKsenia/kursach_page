@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./financePage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__title">
+          <!--  {/* <img src="./images/логотип.jpg" alt="logo" class="logo" /> */} -->
+          <div class="menu__flex">
+            <a class="menu__flex-item" href="../welcomePage/welcomePage.html"
+              >ГЛАВНАЯ</a
+            >
+            <a class="menu__flex-item" href="../aboutPage/aboutPage.html"
+              >О НАС</a
+            >
+            <a class="menu__flex-item" href="../financePage/financePage.html"
+              >БУХГАЛТЕРИЯ</a
+            >
+          </div>
+        </div>
+        <h1 class="title">МОЛОЧНЫЙ МИР</h1>
+        <h3 class="small_title">СИЛА МОЛОКА</h3>
+      </div>
+    </header>
+    <section class="finance">
+      <div class="container">
+        <h2 class="text-h2 finance-h2">
+          ОЦЕНКА ФИНАНСОВОЙ УСТОЧИВОСТИ ОАО "МОЛОЧНЫЙ МИР"
+        </h2>
+        
+          <h2 class="text-h2 form-h2" > Для получения расчетов о финансовой усточивости предприятия заполните все поля данными из бухгалтерского баланса</h2>
+           <form >
+          <label for="sobKap">Собственный капитал:</label>
+            <input type="text" id="sobKap" placeholder="Введите данные">
+
+          <label for="vneobrAkt">Внеоборотные активы:</label>
+            <input type="text" id="vneobrAkt" placeholder="Введите данные">
+
+            <label for="dolgAkt">Долгосрочные обязательства:</label>
+            <input type="text" id="dolgAkt" placeholder="Введите данные">
+
+            <label for="kratAkt">Краткосрочные обязательства:</label>
+            <input type="text" id="kratAkt" placeholder="Введите данные">
+
+            <label for="zapas">Запас:</label>
+            <input type="text" id="zapas" placeholder="Введите данные">
+
+            <label for="obAkt">Оборотные активы:</label>
+            <input type="text" id="obAkt" placeholder="Введите данные">
+             <canvas id="myChart" class="hide"></canvas>
+        </form>
+           
+      </div>
+      <button class="countBtn">COUNT ABSOLUTE</button>
+      <button class="countOtnosBtn">COUNT OTNOSIT</button>
+    </section>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="financePage.js"></script>
+  </body>
+</html>
