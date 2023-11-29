@@ -112,7 +112,7 @@ body {
 }
 
 .title {
-	max-width: 734px;
+
 	font-family: 'Oswald', sans-serif;
 	font-size: 72px;
 	font-weight: 500;
@@ -342,4 +342,16 @@ img {
 		font-size: 18px;
 		margin-right: 30px;
 	}
+
+
+}
+
+@media screen and (max-width:400px) {
+	.title {
+
+		font-size: 46px;
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+
 }
