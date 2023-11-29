@@ -220,7 +220,7 @@ countOtnosBtn.addEventListener("click", () => {
   table_otn_small.innerHTML = `
 <tr>
 <td class = "main_tr" >Коэффициент</td>
-<td class = "main_tr" >Посчитанное значение</td></td>
+<td class = "main_tr" >Значение</td></td>
 <td class = "main_tr" >Норматив</td>
 </tr>
 <tr class='simple_tr'>
